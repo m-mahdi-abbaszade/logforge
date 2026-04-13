@@ -22,16 +22,6 @@ Nginx → Fluent Bit → OpenSearch → Dashboards
 
 ---
 
-## 🌐 Services
-
-- Nginx: http://localhost:8080
-
-- Dashboards: http://localhost:5601
-
-- OpenSearch: http://localhost:9200
-
----
-
 # 📁 Project Structure
 
 logforge/
@@ -52,7 +42,7 @@ logforge/
 
 # 🚀 Getting Started
 
-## 1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/logforge.git
@@ -71,10 +61,46 @@ docker-compose up -d
 curl http://localhost:8080
 ```
 
+```bash
+#Run multiple times:
+for i in {1..20}; do curl http://localhost:8080; done
+```
 
+---
 
+## 🌐 Services
 
+- Nginx: http://localhost:8080
 
+- Dashboards: http://localhost:5601
+
+- OpenSearch: http://localhost:9200
+
+---
+
+## 📊 Dashboards Setup
+1-Open OpenSearch Dashboards
+2-Go to Discover
+3-Create index pattern:
+  nginx-logs*
+4-Use time field:
+  @timestamp
+
+---
+
+## 📈 Example Visualizations
+
+You can build:
+
+Request count over time
+HTTP status code distribution (200/404/500)
+Top client IPs
+Traffic spikes monitoring
+
+---
+
+## 📸 Screenshot
+screenshots\Screenshot 2026-04-13 120326.png
 
 
 
