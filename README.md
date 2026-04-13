@@ -80,10 +80,15 @@ for i in {1..20}; do curl http://localhost:8080; done
 
 ## 📊 Dashboards Setup
 1-Open OpenSearch Dashboards
+
 2-Go to Discover
+
 3-Create index pattern:
+
   nginx-logs*
+  
 4-Use time field:
+
   @timestamp
 
 ---
@@ -93,14 +98,18 @@ for i in {1..20}; do curl http://localhost:8080; done
 You can build:
 
 Request count over time
+
 HTTP status code distribution (200/404/500)
+
 Top client IPs
+
 Traffic spikes monitoring
 
 ---
 
 ## 📸 Screenshot
-screenshots\Screenshot 2026-04-13 120326.png
+
+![Dashboard](screenshots/Screenshot 2026-04-13 120326.png)
 
 
 
