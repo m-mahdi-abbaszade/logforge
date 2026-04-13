@@ -109,7 +109,7 @@ Traffic spikes monitoring
 
 ## 📸 Screenshot
 
-![Dashboard](screenshots/Screenshot 2026-04-13 120326.png)
+![Dashboard](https://github.com/m-mahdi-abbaszade/logforge/blob/main/screenshots/Screenshot%202026-04-13%20120326.png)
 
 
 
